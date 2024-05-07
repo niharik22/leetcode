@@ -1,27 +1,23 @@
 class Solution {
+    
+    public  String getSortedString (String str){
+             char[] chars = str.toCharArray();
+             Arrays.sort(chars);
+             return new String(chars);
+         }
      public List<List<String>> groupAnagrams(String[] strs) {
-        // Check for null or empty input array
-        if (strs == null || strs.length == 0) {
-            return new ArrayList<>();
-        }
         
-        // Create a hashmap to group the anagrams
-        Map<String, List<String>> map = new HashMap<>();
-        for (String s : strs) {
-            // Convert string to character array and sort it
-            char[] charArray = s.toCharArray();
-            Arrays.sort(charArray);
-            String key = String.valueOf(charArray);
-            
-            // If key does not exist in map, create a new entry
-            if (!map.containsKey(key)) {
-                map.put(key, new ArrayList<>());
-            }
-            // Add the original string to the list associated with the sorted key
-            map.get(key).add(s);
-        }
+        HashMap<String,List<String>> container = new HashMap<>();
+        List<List<String>> anagrams = new ArrayList<>();
         
-        // Return the grouped anagrams
-        return new ArrayList<>(map.values());
-    }
+         for(String word : strs){
+            String sortedWord = getSortedString(word);
+            container.putIfAbsent(sortedWord,new ArrayList<>());
+            (container.get(sortedWord)).add(word);
+         }
+         for(String key : container.keySet()){
+             anagrams.add(container.get(key));
+         }
+     return anagrams;
+     }
 }
