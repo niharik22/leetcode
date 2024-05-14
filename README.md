@@ -1,44 +1,32 @@
 <div align="center">
 
-![LeetCode Java DSA](https://example.com/your_animation.gif) <!-- Update with your animated banner URL -->
+![Java DSA Banner](https://example.com/java_dsa_banner.gif) <!-- Replace with your actual banner URL -->
 
-# Java DSA Solutions on LeetCode
+# Niharika's Java DSA Solutions on LeetCode
 
-Welcome to my repository, where I dive deep into Data Structures and Algorithms using Java. Here, you'll find detailed solutions and explanations tailored to help both new and experienced coders.
+## 🚀 Progress Overview
 
-## 📊 My LeetCode Stats
+![Progress Graph](https://example.com/progress_graph.svg) <!-- Replace with your actual graph URL -->
 
-<!-- Add a dynamic badge or chart here, you might need an external service or a custom script -->
+## 🌟 Recent Solutions
 
-## 🌟 Top Problem Solutions
+| Problem | Performance | Visual Overview |
+|---------|-------------|-----------------|
+| [0018-4sum](https://github.com/niharik22/leetcode/blob/main/0018-4sum.java) | ![Performance](https://img.shields.io/badge/Time-13ms-green) ![Space](https://img.shields.io/badge/Space-45.6MB-lightgrey) | ![4Sum](https://example.com/4sum_thumbnail.png) |
+| [0141-linked-list-cycle](https://github.com/niharik22/leetcode/blob/main/0141-linked-list-cycle.java) | ![Performance](https://img.shields.io/badge/Time-0ms-green) ![Space](https://img.shields.io/badge/Space-44.2MB-lightgrey) | ![Linked List Cycle](https://example.com/linked_list_cycle_thumbnail.png) |
+| [0142-linked-list-cycle-ii](https://github.com/niharik22/leetcode/blob/main/0142-linked-list-cycle-ii.java) | ![Performance](https://img.shields.io/badge/Time-0ms-green) ![Space](https://img.shields.io/badge/Space-44.8MB-lightgrey) | ![Linked List Cycle II](https://example.com/linked_list_cycle_ii_thumbnail.png) |
+| [0287-find-the-duplicate-number](https://github.com/niharik22/leetcode/blob/main/0287-find-the-duplicate-number.java) | ![Performance](https://img.shields.io/badge/Time-4ms-green) ![Space](https://img.shields.io/badge/Space-57.8MB-lightgrey) | ![Find Duplicate Number](https://example.com/find_duplicate_number_thumbnail.png) |
 
-- [Binary Search](https://github.com/yourusername/leetcode-repo/blob/main/BinarySearch.java) - A detailed walkthrough of the binary search algorithm.
-- [Dynamic Programming: Knapsack Problem](https://github.com/yourusername/leetcode-repo/blob/main/Knapsack.java) - Optimized solutions with complexity analysis.
+For more detailed solutions, check out my [GitHub repository](https://github.com/niharik22/leetcode).
 
 ## 💼 Skills and Technologies
 
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
-![Algorithm](https://img.shields.io/badge/Algorithm-000000?style=for-the-badge&logo=algorithm&logoColor=white)
-![Data Structures](https://img.shields.io/badge/Data_Structures-FFD700?style=for-the-badge&logo=data-structures&logoColor=white)
-
-## 🏆 GitHub Trophies
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=yourusername&theme=onedark&row=1)](https://github.com/ryo-ma/github-profile-trophy)
-
-## 📈 Contribution Graph
-
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=yourusername&theme=xcode)
+![Data Structures](https://img.shields.io/badge/Data_Structures-FFD700?style=for-the-badge&logo=data-structures&logoColor=black)
+![Algorithms](https://img.shields.io/badge/Algorithms-000000?style=for-the-badge&logo=algorithms&logoColor=white)
 
 ## 👀 Visitors Count
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=yourusername.repoName)
-
-## 🔥 Streak Stats
-
-![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=yourusername&theme=dark&background=000000)
-
-## 🗨️ Let's Discuss
-
-Start a discussion or ask a question [here](https://github.com/yourusername/leetcode-repo/discussions).
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=niharik22.leetcode)
 
 </div>
