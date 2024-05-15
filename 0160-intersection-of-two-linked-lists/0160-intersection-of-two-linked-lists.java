@@ -10,42 +10,48 @@
  * }
  */
 public class Solution {
-    public int lengthCal(ListNode head){
-        int length = 1;
-        ListNode curNode = head;
-        while(curNode.next != null){
-            curNode = curNode.next;
-            length++;
-        }
-        return length;
-    }
+
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null){
             return null;
         } 
-        int lengthA = lengthCal(headA);
-        
-        int lengthB = lengthCal(headB);
-        
-        if(lengthA>lengthB){
-            for(int i = 1; i <= lengthA-lengthB; i++){
-                headA = headA.next;
-            }
+       ListNode listA = headA;
+       ListNode listB = headB;
+       while(listA != null && listB != null){
+        if(listA == listB){
+            return listA;
         }
-        if(lengthA<lengthB){
-            for(int i = 1; i <= lengthB-lengthA; i++){
-                headB = headB.next;
-            }
-        }
-            ListNode listA = headA;
-            ListNode listB = headB;
-            while(listA != null && listB != null){
+        listA = listA.next;
+        listB = listB.next;
+      }
+
+        if(listA == null && listB != null){
+            listA = headB;
+            while(listA != null){
+                listA = listA.next;
+                listB = listB.next;
+                if(listB == null){
+                    listB = headA;    
+                }
                 if(listA == listB){
                     return listA;
                 }
+            }
+        }
+        else if(listB == null && listA != null){
+            listB = headA;
+            while(listB != null){
                 listA = listA.next;
                 listB = listB.next;
+                if(listA == null){
+                    listA = headB;    
+                }
+                if(listA == listB){
+                    return listA;
+                }
             }
-    return null;
         }
+     
+    return null;
+}
 }
