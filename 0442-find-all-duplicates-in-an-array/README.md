@@ -22,3 +22,32 @@
 	<li><code>1 &lt;= nums[i] &lt;= n</code></li>
 	<li>Each element in <code>nums</code> appears <strong>once</strong> or <strong>twice</strong>.</li>
 </ul>
+
+
+# Duplicate Finder in Array
+
+This repository contains a Java solution for identifying all integers that appear twice in an array where every integer is within the range [1, n] and each integer appears either once or twice. The solution adheres to the constraints of O(n) time complexity and uses only constant extra space.
+
+## Problem Statement
+
+Given an integer array `nums` of length `n` where all the integers of `nums` are in the range [1, n] and each integer appears once or twice, the task is to return an array of all the integers that appear twice.
+
+## Solution Approach
+
+### Overview
+
+The algorithm utilizes the properties of the array indices in combination with the values of the array to track duplicates efficiently. By marking visited numbers using negation, the solution detects duplicates without needing additional space for storage.
+
+### Detailed Steps
+
+1. **Index Calculation**:
+   - For each number in the array, calculate the corresponding index as `index = Math.abs(nums[i]) - 1`.
+   
+2. **Marking**:
+   - Use the value at this index to determine if the number has been encountered before.
+   - If the value at this computed index is negative, it implies that the current number is a duplicate.
+   - Otherwise, negate the value at this index to mark the number as seen.
+
+3. **Result Compilation**:
+   - Traverse the array and collect numbers that have caused a negation in another index, indicating that they appear twice.
+
